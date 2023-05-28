@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,400&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="../style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="content">
+        <aside>
+            <h1><span>We </span>Form</h1>
+            <img src="../voluntario.png" alt="">
+        </aside>
+        <main>
+
+            <header>
+                <a href="index.html">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+                <h2>Nova<span>Entidade</span></h2>
+            </header>
+
+            <form action="/entidade" method="POST">
+                <label for="input-name">Nome</label>
+                <input type="text" id="input-name" name="nomeEntidade">
+
+                <label for="input-field">Campo de atuação</label>
+                <input type="text" id="input-field" name="campoAtuacao">
+
+                <div class="points">
+                <label for="input-points">Ponto de Coleta</label>
+                <input type="text" id="input-points" name="pontoDeEntrega">
+                <button>
+                    <i class="fa-solid fa-circle-plus">
+                    </i></button>
+                </div>
+            
+
+            <div class="actions">
+                <button>Cadastrar</button>
+            </div>
+        </form>
+        </main>
+    </div>
+</body>
+
+</html>
