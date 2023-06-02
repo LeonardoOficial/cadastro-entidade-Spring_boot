@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <html lang="pt-br" xmlns:th="https://thymeleaf.org">
 
 <head>
@@ -23,7 +23,7 @@
     <div class="content">
         <aside>
             <h1><span>We </span>Form</h1>
-            <img src="../voluntario.png" alt="">
+            <img src="../voluntario.png" alt="Seja Vonluntario">
         </aside>
         <main>
             <header>
@@ -51,7 +51,7 @@
                                     <form action="/entidade/listar" method="POST">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="id" th:value=${lista.id}>
-                                        <div class="btn">
+                                        <div class="btn-delete">
                                         <button>delete</button>
                                     </div>
                                     </form>
