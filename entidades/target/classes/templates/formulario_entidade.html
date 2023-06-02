@@ -36,6 +36,7 @@
             </header>
 
             <form action="/entidade" method="POST">
+                <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
                 <label for="input-name">Nome</label>
                 <input type="text" id="input-name" name="nomeEntidade">
 
