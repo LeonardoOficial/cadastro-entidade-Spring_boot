@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: -20px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+}
+
+button {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 150px;
+    border-radius: 40px;
+    background: #d90b0b;
+    border: 2px solid #c4e1d805;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: absolute;
+    margin: 179px;
+    left: -300px;
+
+}
+.btnCadastra-2 {
+    outline: none;
+    height: 150px;
+    text-align: center;
+    width: 221px;
+    border-radius: 22px;
+    background: #7173bd00;
+    border: #ff5678;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: absolute;
+    margin: 469px;
+    left: -232px;
+}
+
+button:hover {
+    color: white;
+    background: #670303;
+}
+
+button:active {
+    letter-spacing: 2px;
+}
+
+button:after {
+    content: "Delete";
+}
+
+button.btnCadastra-2:after {
+    content: " Cadastrar";
+}
+button.btnCadastra-2:hover{
+
+    background: rgba(70, 183, 12, 0.37);
+    color: #cddbd5;
+}
+
+.onclic {
+    width: 40px;
+    border-color: #bbbbbb;
+    border-width: 3px;
+    font-size: 0;
+    border-left-color: #1ECD97;
+    -webkit-animation: rotating 2s 0.25s linear infinite;
+    animation: rotating 2s 0.25s linear infinite;
+}
+
+.onclic:after {
+    content: "";
+}
+
+.onclic:hover {
+    color: #1ECD97;
+    background: white;
+}
+
+.validate {
+    font-size: 13px;
+    color: white;
+    background: #1ECD97;
+}
+
+.validate:after {
+    font-family: "FontAwesome";
+    content: "";
+}
+
+@-webkit-keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Rodapé */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    /* Outros estilos para o conteúdo da página */
+}
+
+.rodape-sobre {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
