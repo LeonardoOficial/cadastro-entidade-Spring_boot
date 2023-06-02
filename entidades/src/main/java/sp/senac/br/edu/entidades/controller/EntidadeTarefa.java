@@ -26,6 +26,12 @@ public class EntidadeTarefa {
     public String formulario(){
         return "formulario_entidade";
     }
+    
+    @GetMapping("/")
+    public String Home(){
+        return "redirect:/entidade";
+    }
+
 
     @GetMapping("entidade/listar")
     public String listar(Model model){
